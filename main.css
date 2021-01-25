@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+    background-image: url(notebook.jpg);
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 16px;
+    margin: 0;
+}
+
+.page {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    width: 400px;
+}
+
+.page__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.add-product:hover {
+    color: rgb(88, 148, 197);
+    cursor: pointer;
+}
+
+.page__table {
+    padding: 10px;
+    width: 400px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.page__cell {
+    padding-right: 70px;
+    padding-bottom: 10px;
+}
+
+.page__cell:last-child {
+    padding-right: 0;
+}
+
+.page__delete:hover {
+    color: rgb(88, 148, 197);
+    cursor: pointer;
+}
+
+.page__pensil {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    
+}
+
+.page__pensil #Page-1:hover {
+    width: 15px;
+    height: 15px;
+    fill: rgb(88, 148, 197);
+}
+
+.popup {
+    position:absolute;
+    top: 30px;
+    left: 20px;
+    width: 358px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.popup-hidden {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form__button {
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    outline: 0;
+}
+
+.form__button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgb(88, 148, 197), 0 16px 20px  rgb(88, 148, 197);
+    border-color: rgb(88, 148, 197);
+    color: rgb(88, 148, 197);
+    transition: 0.3s;
+    cursor: pointer;
+}    
+
+.form__input {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: 0;
+}
+
+.form__invalid {
+    height: 20px;
+    font-size: 10px;
+    color: rgb(212, 24, 24);
+    
+}
+
